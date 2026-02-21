@@ -1,49 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>andriy novykov</title>
-	<link rel="stylesheet" type="text/css" href="style.css?v=1.0">
+  <title>Andriy Novykov</title>
+  
+  <meta name="author" content="Andriy Novykov">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260221">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 
 <body>
-	<header>
-		<h1 class="hero-title">andriy novykov, </h1>
-	</header>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
 
-	<section>
-		<p class="hero-text"> currently </p>
-		<p class="hero-text"> working at </p>
-		<p class="hero-text"> aethra labs. </p>
-	</section>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Andriy Novykov</name>
+              </p>
+              <p>Senior software engineer specializing in systems observability, security, and infrastructure for AI research.</p>
+              <p>Built an eBPF-based AI agent runtime monitoring platform end-to-end as Cofounder/CTO of Aethra Labs, including full-stack ingestion + dashboard and AI-based trajectory monitors.</p>
+              <p>Previously led GPU cluster and petabyte-scale storage at the Center for AI Safety, supporting high-impact ML safety research.</p>
 
-	<section>
-		<div class="history-title"> previously </div>
-		<div class="history-item"> center for ai safety </div>
-		<div class="history-item"> simpli.fi </div>
-		<div class="history-item"> knoebel institute for healthy aging </div>
-		<div class="history-item"> university of denver </div>
-	</section>
+              <p style="text-align:center">
+                <a href="mailto:novykov.andriy@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="data/cv.pdf">CV</a> &nbsp/&nbsp
+                <a href="https://github.com/AndriyNovykov/">Github</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/andriynovykov/">LinkedIn</a>
+              </p>
+              <p style="text-align:center">San Francisco Bay Area</p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/profile.jpg" class="profile-photo-wrap"><img alt="profile photo" src="images/profile.jpg" class="hoverZoomLink profile-photo"></a>
+            </td>
+          </tr>
+	        </tbody></table>
 
-	<section>
-		<div class="hero-text"> </div>
-	</section>
+	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Summary</heading>
+                <p>Senior software engineer specializing in systems observability, security, and infrastructure for AI research. Built an eBPF-based AI agent runtime monitoring platform end-to-end as Cofounder/CTO of Aethra Labs (YC-accepted company), including full-stack ingestion + dashboard and AI-based trajectory monitors. Previously led GPU cluster and petabyte-scale storage at the Center for AI Safety supporting high-impact ML safety research.</p>
+              </td>
+            </tr>
+          </tbody></table>
 
-	<div class="image-container">
-		<div class="image-container float-image" style="display: inline-block;">
-			<a href="https://github.com/andriynovykov">
-				<img src="github.png" alt="github" width="66" height="66">
-			</a>
-		</div>
-		<div class="image-container float-image" style="display: inline-block;">
-			<a href="https://www.linkedin.com/in/andriynovykov">
-				<img src="linkedin.png" alt="linkedin" width="66" height="66">
-			</a>
-		</div>
-	</div>
+	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	            <tr>
+	            <td style="padding:20px;width:100%;vertical-align:middle">
+	              <heading>Experience</heading>
+	            </td>
+	          </tr>
+	        </tbody></table>
 
+	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <strong>Aethra Labs</strong><br>
+                Cofounder &amp; CTO<br>
+                Jul 15, 2025 - Dec 31, 2025<br>
+                San Francisco &amp; Berkeley, CA
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                <ul>
+                  <li>Built a system-level AI agent runtime monitoring platform using eBPF (libbpf) and a privileged host daemon to capture complete traces of agent behavior independent of the agent application.</li>
+                  <li>Implemented PID-targeted instrumentation that attaches to a running agent process and records correlated system activity (process tree, file I/O, network traffic, shell activity), enabling forensic-style replay and auditing of agent runs.</li>
+                  <li>Achieved low monitoring overhead via eBPF-based collection (~3% CPU overhead on monitored agent processes) while capturing high-level context (inputs/outputs and available agent telemetry) alongside low-level actions.</li>
+                  <li>Shipped full-stack product (Python + TypeScript/JavaScript + Docker): collectors/exporters/forwarders, backend ingestion services, and a frontend dashboard for trace search, visualization, and investigation workflows.</li>
+                  <li>Developed AI-based trajectory monitors that review agent traces and flag potentially suspicious or misaligned behaviors; integrated monitors into analysis workflows for rapid iteration.</li>
+                  <li>Integrated monitoring into Redwood Research evaluation/control environments by installing the daemon on hosts running the agent + environment and attaching monitoring to the target agent PID.</li>
+                  <li>Stood up red-team tooling on less than 24 hours notice for a time-boxed engagement evaluating xAI Grok models: deployed a VPS-hosted OpenWebUI chat interface backed by a LiteLLM proxy to enable structured interaction and centralized chat logging/export for later analysis.</li>
+                  <li>Company accepted to Y Combinator (YC); selected for the 50 Years 5050 AI accelerator cohort; first company accepted into Constellations startup incubator; angel investment from Geoff Ralston.</li>
+                  <li>Transitioned engineering ownership to an incoming technical cofounder with architecture documentation, runbooks, and operational handoff.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <strong>The Center for AI Safety (CAIS)</strong><br>
+                Lead Infrastructure Engineer<br>
+                Feb 2023 - Jul 15, 2025
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                <ul>
+                  <li>Owned infrastructure for a free-to-use ML research GPU cluster (Oracle Cloud Infrastructure, Slurm) with 256 GPUs and distributed parallel filesystem (WekaFS), supporting 110+ papers and 5000+ citations in less than 2 years; $3.5M+ annual budget.</li>
+                  <li>Led deployment of converged petabyte-scale WekaFS, reducing storage cost/GB by 90% and delivering $900,000+ annual cost savings.</li>
+                  <li>Executed full cluster OS migration from Oracle Linux 7 to Ubuntu 22.04 via complete redeploy: rewrote Ansible automation, migrated LDAP/SlurmDB/Nix store, and backed up/restored nearly 200 TB and 150M+ files with minimal downtime goal (less than 48 hours).</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <strong>Bidtellect</strong><br>
+                Platform Software Engineer<br>
+                Jun 2020 - Feb 2023
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                <ul>
+                  <li>Built, debugged, and maintained RESTful APIs, ETL pipelines, and SQL/NoSQL data systems powering a platform processing 6B+ auction requests per day.</li>
+                  <li>Performed code reviews and operational support to improve reliability, correctness, and maintainability across production services.</li>
+                  <li>Supported team execution as Scrum Lead by scheduling ceremonies, unblocking engineers, and tracking sprint delivery.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <strong>Knoebel Institute for Healthy Aging</strong><br>
+                Research Assistant / Electrical Engineer<br>
+                Sep 2018 - Jun 2020
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                <ul>
+                  <li>Designed and built an advanced neural recording apparatus (tetrode drive) improving reliability and performance compared to conventional electrodes.</li>
+                  <li>Tested wireless neural recording devices and recorded rodent motor cortex activity to study the relationship between neural signals and motor movement for movement-prediction modeling.</li>
+                  <li>Supported research efforts resulting in $5,500 in awarded grants.</li>
+                </ul>
+              </td>
+            </tr>
+	        </tbody></table>
+
+	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Publications</heading>
+                <p><strong>Remote Labor Index: Measuring AI Automation of Remote Work</strong> (arXiv:2510.26787)</p>
+                <p>Cited contributor; contributed to the initial evaluation platform design during early development.</p>
+                <p><a href="https://www.remotelabor.ai">https://www.remotelabor.ai</a></p>
+              </td>
+            </tr>
+	        </tbody></table>
+
+	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Technical Skills</heading>
+                <p><strong>Languages:</strong> Python, TypeScript/JavaScript, Bash, C/C++, C#, Java</p>
+                <p><strong>Systems &amp; Security:</strong> Linux, eBPF, libbpf, system instrumentation, tamper-resistant telemetry (privileged collection)</p>
+                <p><strong>Infra/DevOps:</strong> Slurm, Ansible, Terraform, Docker, Kubernetes, Grafana, Prometheus, VictoriaMetrics</p>
+                <p><strong>Cloud &amp; Data:</strong> Oracle Cloud Infrastructure (OCI), AWS, GCP, PostgreSQL, MySQL, MS SQL Server, NoSQL databases</p>
+              </td>
+            </tr>
+	        </tbody></table>
+
+	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Education</heading>
+                <p><strong>University of Denver</strong><br>Bachelor of Science in Computer Engineering</p>
+              </td>
+            </tr>
+	        </tbody></table>
+
+	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Site adapted from <a href="https://github.com/jonbarron/jonbarron_website">jonbarron</a>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
 </body>
 
 </html>
