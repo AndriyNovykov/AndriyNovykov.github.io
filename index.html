@@ -6,18 +6,18 @@
   <meta name="author" content="Andriy Novykov">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260221">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260222">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table class="page-shell" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
+	        <table class="hero-section" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	          <tr style="padding:0px">
+	            <td class="hero-text">
               <p style="text-align:center">
                 <name>Andriy Novykov</name>
               </p>
@@ -33,38 +33,39 @@
               </p>
               <p style="text-align:center">San Francisco Bay Area</p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/profile.jpg" class="profile-photo-wrap"><img alt="profile photo" src="images/profile.jpg" class="hoverZoomLink profile-photo"></a>
-            </td>
-          </tr>
-	        </tbody></table>
-
-	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <heading>Summary</heading>
-                <p>Senior software engineer specializing in systems observability, security, and infrastructure for AI research. Built an eBPF-based AI agent runtime monitoring platform end-to-end as Cofounder/CTO of Aethra Labs (YC-accepted company), including full-stack ingestion + dashboard and AI-based trajectory monitors. Previously led GPU cluster and petabyte-scale storage at the Center for AI Safety supporting high-impact ML safety research.</p>
-              </td>
-            </tr>
-          </tbody></table>
-
-	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	            <tr>
-	            <td style="padding:20px;width:100%;vertical-align:middle">
-	              <heading>Experience</heading>
+	            <td class="hero-photo-cell">
+	              <a href="images/profile.jpg" class="profile-photo-wrap"><img alt="profile photo" src="images/profile.jpg" class="hoverZoomLink profile-photo"></a>
 	            </td>
 	          </tr>
-	        </tbody></table>
+		        </tbody></table>
 
-	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:top">
+		        <table class="section-block" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	            <tr>
+	              <td class="section-cell">
+	                <heading>Summary</heading>
+	                <p>Senior software engineer specializing in systems observability, security, and infrastructure for AI research. Built an eBPF-based AI agent runtime monitoring platform end-to-end as Cofounder/CTO of Aethra Labs (YC-accepted company), including full-stack ingestion + dashboard and AI-based trajectory monitors. Previously led GPU cluster and petabyte-scale storage at the Center for AI Safety supporting high-impact ML safety research.</p>
+	              </td>
+	            </tr>
+	          </tbody></table>
+
+		        <table class="section-block" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		            <tr>
+		            <td class="section-cell">
+		              <heading>Experience</heading>
+		            </td>
+		          </tr>
+		        </tbody></table>
+
+		        <table class="section-block experience-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	            <tr class="experience-row">
+              <td class="experience-meta">
+                <img src="images/logos/aethra-labs.jpg" alt="Aethra Labs logo" class="experience-logo">
                 <strong>Aethra Labs</strong><br>
                 Cofounder &amp; CTO<br>
                 Jul 15, 2025 - Dec 31, 2025<br>
                 San Francisco &amp; Berkeley, CA
               </td>
-              <td style="padding:20px;width:75%;vertical-align:top">
+              <td class="experience-details">
                 <ul>
                   <li>Built a system-level AI agent runtime monitoring platform using eBPF (libbpf) and a privileged host daemon to capture complete traces of agent behavior independent of the agent application.</li>
                   <li>Implemented PID-targeted instrumentation that attaches to a running agent process and records correlated system activity (process tree, file I/O, network traffic, shell activity), enabling forensic-style replay and auditing of agent runs.</li>
@@ -78,13 +79,14 @@
                 </ul>
               </td>
             </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:top">
+	            <tr class="experience-row">
+              <td class="experience-meta">
+                <img src="images/logos/center-for-ai-safety.jpg" alt="The Center for AI Safety logo" class="experience-logo">
                 <strong>The Center for AI Safety (CAIS)</strong><br>
                 Lead Infrastructure Engineer<br>
                 Feb 2023 - Jul 15, 2025
               </td>
-              <td style="padding:20px;width:75%;vertical-align:top">
+              <td class="experience-details">
                 <ul>
                   <li>Owned infrastructure for a free-to-use ML research GPU cluster (Oracle Cloud Infrastructure, Slurm) with 256 GPUs and distributed parallel filesystem (WekaFS), supporting 110+ papers and 5000+ citations in less than 2 years; $3.5M+ annual budget.</li>
                   <li>Led deployment of converged petabyte-scale WekaFS, reducing storage cost/GB by 90% and delivering $900,000+ annual cost savings.</li>
@@ -92,13 +94,14 @@
                 </ul>
               </td>
             </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:top">
-                <strong>Bidtellect</strong><br>
+	            <tr class="experience-row">
+              <td class="experience-meta">
+                <img src="images/logos/bidtellect.jpg" alt="Bidtellect logo" class="experience-logo">
+                <strong>Bidtellect (acquired by Simpli.fi)</strong><br>
                 Platform Software Engineer<br>
                 Jun 2020 - Feb 2023
               </td>
-              <td style="padding:20px;width:75%;vertical-align:top">
+              <td class="experience-details">
                 <ul>
                   <li>Built, debugged, and maintained RESTful APIs, ETL pipelines, and SQL/NoSQL data systems powering a platform processing 6B+ auction requests per day.</li>
                   <li>Performed code reviews and operational support to improve reliability, correctness, and maintainability across production services.</li>
@@ -106,13 +109,14 @@
                 </ul>
               </td>
             </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:top">
+	            <tr class="experience-row">
+              <td class="experience-meta">
+                <img src="images/logos/university-of-denver.jpg" alt="University of Denver logo" class="experience-logo">
                 <strong>Knoebel Institute for Healthy Aging</strong><br>
                 Research Assistant / Electrical Engineer<br>
                 Sep 2018 - Jun 2020
               </td>
-              <td style="padding:20px;width:75%;vertical-align:top">
+              <td class="experience-details">
                 <ul>
                   <li>Designed and built an advanced neural recording apparatus (tetrode drive) improving reliability and performance compared to conventional electrodes.</li>
                   <li>Tested wireless neural recording devices and recorded rodent motor cortex activity to study the relationship between neural signals and motor movement for movement-prediction modeling.</li>
@@ -122,46 +126,45 @@
             </tr>
 	        </tbody></table>
 
-	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <heading>Publications</heading>
-                <p><strong>Remote Labor Index: Measuring AI Automation of Remote Work</strong> (arXiv:2510.26787)</p>
-                <p>Cited contributor; contributed to the initial evaluation platform design during early development.</p>
-                <p><a href="https://www.remotelabor.ai">https://www.remotelabor.ai</a></p>
-              </td>
-            </tr>
-	        </tbody></table>
+		        <table class="section-block" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	            <tr>
+	              <td class="section-cell">
+	                <heading>Publications</heading>
+	                <p><strong>Remote Labor Index: Measuring AI Automation of Remote Work</strong> (arXiv:2510.26787)</p>
+	                <p>Cited contributor; contributed to the initial evaluation platform design during early development.</p>
+	                <p><a href="https://www.remotelabor.ai">https://www.remotelabor.ai</a></p>
+	              </td>
+	            </tr>
+		        </tbody></table>
 
-	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <heading>Technical Skills</heading>
-                <p><strong>Languages:</strong> Python, TypeScript/JavaScript, Bash, C/C++, C#, Java</p>
-                <p><strong>Systems &amp; Security:</strong> Linux, eBPF, libbpf, system instrumentation, tamper-resistant telemetry (privileged collection)</p>
-                <p><strong>Infra/DevOps:</strong> Slurm, Ansible, Terraform, Docker, Kubernetes, Grafana, Prometheus, VictoriaMetrics</p>
-                <p><strong>Cloud &amp; Data:</strong> Oracle Cloud Infrastructure (OCI), AWS, GCP, PostgreSQL, MySQL, MS SQL Server, NoSQL databases</p>
-              </td>
-            </tr>
-	        </tbody></table>
+		        <table class="section-block" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	            <tr>
+	              <td class="section-cell">
+	                <heading>Technical Skills</heading>
+	                <p><strong>Languages:</strong> Python, TypeScript/JavaScript, Bash, C/C++, C#, Java</p>
+	                <p><strong>Systems &amp; Security:</strong> Linux, eBPF, libbpf, system instrumentation, tamper-resistant telemetry (privileged collection)</p>
+	                <p><strong>Infra/DevOps:</strong> Slurm, Ansible, Terraform, Docker, Kubernetes, Grafana, Prometheus, VictoriaMetrics</p>
+	                <p><strong>Cloud &amp; Data:</strong> Oracle Cloud Infrastructure (OCI), AWS, GCP, PostgreSQL, MySQL, MS SQL Server, NoSQL databases</p>
+	              </td>
+	            </tr>
+		        </tbody></table>
 
-	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <heading>Education</heading>
-                <p><strong>University of Denver</strong><br>Bachelor of Science in Computer Engineering</p>
-              </td>
-            </tr>
-	        </tbody></table>
+		        <table class="section-block" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	            <tr>
+	              <td class="section-cell">
+	                <heading>Education</heading>
+	                <p><strong>University of Denver</strong><br>Bachelor of Science in Computer Engineering</p>
+	              </td>
+	            </tr>
+		        </tbody></table>
 
-	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                Site adapted from <a href="https://github.com/jonbarron/jonbarron_website">jonbarron</a>.
-              </p>
-            </td>
+		        <table class="site-footer" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	          <tr>
+	            <td class="footer-cell">
+	              <p class="footer-text">
+	                Site adapted from <a href="https://github.com/jonbarron/jonbarron_website">jonbarron</a>.
+	              </p>
+	            </td>
           </tr>
         </tbody></table>
       </td>
