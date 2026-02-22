@@ -130,13 +130,24 @@
     background-color: #ffffd0;
   }
 
+  .hero-text {
+    width: 55%;
+    vertical-align: middle;
+  }
+
+  .hero-photo-cell {
+    width: 45%;
+    vertical-align: middle;
+  }
+
   .profile-photo-wrap {
     width: 100%;
-    max-width: 100%;
+    max-width: 560px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
     display: block;
+    margin: 0 auto;
   }
 
   .profile-photo {
