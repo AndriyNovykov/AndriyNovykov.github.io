@@ -1,1 +1,7 @@
 .DS_Store
+
+# Local-only artifacts (screenshots, audits, notes)
+/scratch/
+
+# Local Python virtualenv
+/.venv/

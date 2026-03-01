@@ -23,7 +23,7 @@
               </p>
               <p>Senior software engineer specializing in systems observability, security, and infrastructure for AI research.</p>
               <p>Built an eBPF-based AI agent runtime monitoring platform end-to-end as Cofounder/CTO of Aethra Labs, including full-stack ingestion + dashboard and AI-based trajectory monitors.</p>
-              <p>Previously led GPU cluster and petabyte-scale storage at the Center for AI Safety, supporting high-impact ML safety research.</p>
+              <p>Previously led infrastructure for a GPU cluster and distributed parallel filesystem (WekaFS) at the Center for AI Safety, supporting high-impact ML safety research.</p>
 
               <p style="text-align:center">
                 <a href="mailto:novykov.andriy@gmail.com">Email</a> &nbsp/&nbsp
@@ -43,7 +43,7 @@
 	            <tr>
 	              <td class="section-cell">
 	                <heading>Summary</heading>
-	                <p>Senior software engineer specializing in systems observability, security, and infrastructure for AI research. Built an eBPF-based AI agent runtime monitoring platform end-to-end as Cofounder/CTO of Aethra Labs (YC-accepted company), including full-stack ingestion + dashboard and AI-based trajectory monitors. Previously led GPU cluster and petabyte-scale storage at the Center for AI Safety supporting high-impact ML safety research.</p>
+	                <p>Senior software engineer specializing in systems observability, security, and infrastructure for AI research. Built an eBPF-based AI agent runtime monitoring platform end-to-end as Cofounder/CTO of Aethra Labs (YC W26), including full-stack ingestion + dashboard and AI-based trajectory monitors. Previously led infrastructure for a GPU cluster and distributed parallel filesystem (WekaFS) at the Center for AI Safety supporting high-impact ML safety research.</p>
 	              </td>
 	            </tr>
 	          </tbody></table>
@@ -60,61 +60,53 @@
 	            <tr class="experience-row">
               <td class="experience-meta">
                 <img src="images/logos/aethra-labs.jpg" alt="Aethra Labs logo" class="experience-logo">
-                <strong>Aethra Labs</strong><br>
-                Cofounder &amp; CTO<br>
-                Jul 15, 2025 - Dec 31, 2025<br>
-                San Francisco &amp; Berkeley, CA
+                <strong>Aethra Labs (YC W26) San Francisco &amp; Berkeley, CA</strong><br>
+                Cofounder &amp; CTO July 2025 – December 2025
               </td>
               <td class="experience-details">
                 <ul>
-                  <li>Built a system-level AI agent runtime monitoring platform using eBPF (libbpf) and a privileged host daemon to capture complete traces of agent behavior independent of the agent application.</li>
-                  <li>Implemented PID-targeted instrumentation that attaches to a running agent process and records correlated system activity (process tree, file I/O, network traffic, shell activity), enabling forensic-style replay and auditing of agent runs.</li>
-                  <li>Achieved low monitoring overhead via eBPF-based collection (~3% CPU overhead on monitored agent processes) while capturing high-level context (inputs/outputs and available agent telemetry) alongside low-level actions.</li>
-                  <li>Shipped full-stack product (Python + TypeScript/JavaScript + Docker): collectors/exporters/forwarders, backend ingestion services, and a frontend dashboard for trace search, visualization, and investigation workflows.</li>
-                  <li>Developed AI-based trajectory monitors that review agent traces and flag potentially suspicious or misaligned behaviors; integrated monitors into analysis workflows for rapid iteration.</li>
-                  <li>Integrated monitoring into Redwood Research evaluation/control environments by installing the daemon on hosts running the agent + environment and attaching monitoring to the target agent PID.</li>
-                  <li>Stood up red-team tooling on less than 24 hours notice for a time-boxed engagement evaluating xAI Grok models: deployed a VPS-hosted OpenWebUI chat interface backed by a LiteLLM proxy to enable structured interaction and centralized chat logging/export for later analysis.</li>
-                  <li>Company accepted to Y Combinator (YC); selected for the 50 Years 5050 AI accelerator cohort; first company accepted into Constellations startup incubator; angel investment from Geoff Ralston.</li>
-                  <li>Transitioned engineering ownership to an incoming technical cofounder with architecture documentation, runbooks, and operational handoff.</li>
+                  <li>Architected a system-level AI agent monitoring platform using eBPF (libbpf ) to capture kernel-level traces (file I/O, network, process tress) with &lt;3% CPU overhead, ensuring auditability independent of agent state.</li>
+                  <li>Built a high-throughput data ingestion and visualization suite (Python, TypeScript, Docker) to process raw system telemetry into forensic-style replays, enabling investigation of complex agent trajectories.</li>
+                  <li>Engineered AI-based trajectory monitors to automatically flag misaligned or suspicious behaviors; integrated these monitors into real-time analysis pipelines to accelerate safety-testing cycles.</li>
+                  <li>Deployed privileged observability daemons within Redwood Research evaluation environments, attaching to target PIDs to provide ground-truth behavior data for safety-critical model testing.</li>
+                  <li>Executed a 24-hour rapid deployment of red-team infrastructure for xAI Grok evaluations, utilizing a LiteLLM proxy and OpenWebUI to enable structured interaction and centralized logging.</li>
+                  <li>Raised $700,000 in seed funding from Y Combinator and prominent angels including Geoff Ralston.</li>
                 </ul>
               </td>
             </tr>
-	            <tr class="experience-row">
+		            <tr class="experience-row">
               <td class="experience-meta">
                 <img src="images/logos/center-for-ai-safety.jpg" alt="The Center for AI Safety logo" class="experience-logo">
                 <strong>The Center for AI Safety (CAIS)</strong><br>
-                Lead Infrastructure Engineer<br>
-                Feb 2023 - Jul 15, 2025
+                Lead Infrastructure Engineer February 2023 – July 2025
               </td>
               <td class="experience-details">
                 <ul>
-                  <li>Owned infrastructure for a free-to-use ML research GPU cluster (Oracle Cloud Infrastructure, Slurm) with 256 GPUs and distributed parallel filesystem (WekaFS), supporting 110+ papers and 5000+ citations in less than 2 years; $3.5M+ annual budget.</li>
-                  <li>Led deployment of converged petabyte-scale WekaFS, reducing storage cost/GB by 90% and delivering $900,000+ annual cost savings.</li>
-                  <li>Executed full cluster OS migration from Oracle Linux 7 to Ubuntu 22.04 via complete redeploy: rewrote Ansible automation, migrated LDAP/SlurmDB/Nix store, and backed up/restored nearly 200 TB and 150M+ files with minimal downtime goal (less than 48 hours).</li>
+                  <li>Owned infrastructure for a GPU cluster for ML research (OCI, Slurm) with 256 GPUs and distributed parallel filesystem (WekaFS), supporting 125+ papers and 16000+ citations; $3.5M+ annual budget.</li>
+                  <li>Led deployment of converged 200TB WekaFS, reducing storage cost/GB by 90% and $900,000+ annual cost savings.</li>
+                  <li>Executed full cluster OS migration from Oracle Linux 7 to Ubuntu 22.04: rewrote Ansible automation, migrated LDAP/SlurmDB/Nix store, and backed up/restored nearly 200 TB and 150M+ files.</li>
                 </ul>
               </td>
             </tr>
-	            <tr class="experience-row">
+		            <tr class="experience-row">
               <td class="experience-meta">
                 <img src="images/logos/bidtellect.jpg" alt="Bidtellect logo" class="experience-logo">
                 <strong>Bidtellect (acquired by Simpli.fi)</strong><br>
-                Platform Software Engineer<br>
-                Jun 2020 - Feb 2023
+                Platform Software Engineer June 2020 – February 2023
               </td>
               <td class="experience-details">
                 <ul>
                   <li>Built, debugged, and maintained RESTful APIs, ETL pipelines, and SQL/NoSQL data systems powering a platform processing 6B+ auction requests per day.</li>
-                  <li>Performed code reviews and operational support to improve reliability, correctness, and maintainability across production services.</li>
+                  <li>Performed code reviews and ops support to improve production service reliability, correctness, and maintainability.</li>
                   <li>Supported team execution as Scrum Lead by scheduling ceremonies, unblocking engineers, and tracking sprint delivery.</li>
                 </ul>
               </td>
             </tr>
-	            <tr class="experience-row">
+		            <tr class="experience-row">
               <td class="experience-meta">
                 <img src="images/logos/university-of-denver.jpg" alt="University of Denver logo" class="experience-logo">
                 <strong>Knoebel Institute for Healthy Aging</strong><br>
-                Research Assistant / Electrical Engineer<br>
-                Sep 2018 - Jun 2020
+                Research Assistant / Electrical Engineer September 2018 – June 2020
               </td>
               <td class="experience-details">
                 <ul>
@@ -129,24 +121,10 @@
 		        <table class="section-block" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 	            <tr>
 	              <td class="section-cell">
-	                <heading>Publications</heading>
-	                <p><strong>Remote Labor Index: Measuring AI Automation of Remote Work</strong> (arXiv:2510.26787).</p>
-	                <p>&bull; Cited contributor; contributed to the initial evaluation platform design during early development. <a href="https://www.remotelabor.ai">remotelabor.ai</a></p>
-	                <p><strong>Tamper-Resistant Safeguards for Open-Weight LLMs</strong> (arXiv:2408.00761, ICLR 2025).</p>
-	                <p>&bull; Acknowledged for providing compute infrastructure support via the Center for AI Safety.</p>
-	                <p><strong>Safetywashing: Do AI Safety Benchmarks Actually Measure Safety?</strong> (arXiv:2407.21792).</p>
-	                <p>&bull; Acknowledged for compute infrastructure support at the Center for AI Safety.</p>
-	              </td>
-	            </tr>
-		        </tbody></table>
-
-		        <table class="section-block" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	            <tr>
-	              <td class="section-cell">
 	                <heading>Technical Skills</heading>
 	                <p><strong>Languages:</strong> Python, TypeScript/JavaScript, Bash, C/C++, C#, Java</p>
-	                <p><strong>Systems &amp; Security:</strong> Linux, eBPF, libbpf, system instrumentation, tamper-resistant telemetry (privileged collection)</p>
-	                <p><strong>Infra/DevOps:</strong> Slurm, Ansible, Terraform, Docker, Kubernetes, Grafana, Prometheus, VictoriaMetrics</p>
+	                <p><strong>Systems &amp; Security:</strong> Linux kernel, eBPF (libbpf), system instrumentation, tamper-resistant telemetry, performance profiling</p>
+	                <p><strong>Infra/DevOps:</strong> Slurm, Ansible, Terraform, Docker, Kubernetes, Nix, WekaFS, Prometheus, VictoriaMetrics</p>
 	                <p><strong>Cloud &amp; Data:</strong> Oracle Cloud Infrastructure (OCI), AWS, GCP, PostgreSQL, MySQL, MS SQL Server, NoSQL databases</p>
 	              </td>
 	            </tr>
