@@ -127,6 +127,10 @@
     margin: 0 auto;
   }
 
+  .profile-photo-wrap picture {
+    display: block;
+  }
+
   .profile-photo {
     width: 100%;
     height: auto;
