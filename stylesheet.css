@@ -181,6 +181,29 @@
   }
 
   @media (max-width: 760px) {
+    /* Stack hero content on mobile (table-based layout). */
+    .hero-section,
+    .hero-section tbody,
+    .hero-section tr,
+    .hero-section td {
+      display: block;
+      width: 100%;
+    }
+
+    .hero-text,
+    .hero-photo-cell {
+      box-sizing: border-box;
+      padding: 16px 20px;
+    }
+
+    .hero-photo-cell {
+      padding-top: 0;
+    }
+
+    .profile-photo-wrap {
+      max-width: 320px;
+    }
+
     .experience-table,
     .experience-table tbody {
       display: block;
