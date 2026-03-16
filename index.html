@@ -22,8 +22,8 @@
                 <name>Andriy Novykov</name>
               </p>
               <p>Senior software engineer specializing in systems observability, security, and infrastructure for AI research.</p>
-              <p>Built an eBPF-based AI agent runtime monitoring platform end-to-end as Cofounder/CTO of Aethra Labs, including full-stack ingestion + dashboard and AI-based trajectory monitors.</p>
-              <p>Previously led infrastructure for a GPU cluster and distributed parallel filesystem (WekaFS) at the Center for AI Safety, supporting high-impact ML safety research.</p>
+              <p>Most recently Cofounder &amp; CTO at Aethra Labs (YC W26), where I built an eBPF-based AI agent monitoring platform and telemetry analysis stack for frontier-model evaluations.</p>
+              <p>Previously led infrastructure for the Center for AI Safety's 256-GPU research cluster and WekaFS deployment supporting high-impact ML safety research.</p>
 
               <p style="text-align:center">
                 <a href="mailto:novykov.andriy@gmail.com">Email</a> &nbsp/&nbsp
@@ -46,15 +46,6 @@
 		        </tbody></table>
 
 		        <table class="section-block" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	            <tr>
-	              <td class="section-cell">
-	                <heading>Summary</heading>
-	                <p>Senior software engineer specializing in systems observability, security, and infrastructure for AI research. Built an eBPF-based AI agent runtime monitoring platform end-to-end as Cofounder/CTO of Aethra Labs (YC W26), including full-stack ingestion + dashboard and AI-based trajectory monitors. Previously led infrastructure for a GPU cluster and distributed parallel filesystem (WekaFS) at the Center for AI Safety supporting high-impact ML safety research.</p>
-	              </td>
-	            </tr>
-	          </tbody></table>
-
-		        <table class="section-block" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		            <tr>
 		            <td class="section-cell">
 		              <heading>Experience</heading>
@@ -71,12 +62,12 @@
               </td>
               <td class="experience-details">
                 <ul>
-                  <li>Architected a system-level AI agent monitoring platform using eBPF (libbpf ) to capture kernel-level traces (file I/O, network, process tress) with &lt;3% CPU overhead, ensuring auditability independent of agent state.</li>
-                  <li>Built a high-throughput data ingestion and visualization suite (Python, TypeScript, Docker) to process raw system telemetry into forensic-style replays, enabling investigation of complex agent trajectories.</li>
-                  <li>Engineered AI-based trajectory monitors to automatically flag misaligned or suspicious behaviors; integrated these monitors into real-time analysis pipelines to accelerate safety-testing cycles.</li>
-                  <li>Deployed privileged observability daemons within Redwood Research evaluation environments, attaching to target PIDs to provide ground-truth behavior data for safety-critical model testing.</li>
+                  <li>Architected a system-level AI agent monitoring platform using eBPF (libbpf) to capture kernel-level traces (file I/O, network, process trees) with &lt;3% CPU overhead, providing auditability independent of agent state.</li>
+                  <li>Built a high-throughput telemetry ingestion and visualization stack (Python, TypeScript, Docker) that transformed raw system events into forensic-style replays for investigation of complex agent behavior.</li>
+                  <li>Engineered AI-based trajectory monitors that automatically flagged suspicious or misaligned behavior and integrated them into real-time analysis pipelines for continuous safety evaluation.</li>
+                  <li>Deployed privileged observability daemons inside Redwood Research evaluation environments, attaching to target PIDs to capture ground-truth runtime behavior for safety-critical model testing.</li>
                   <li>Executed a 24-hour rapid deployment of red-team infrastructure for xAI Grok evaluations, utilizing a LiteLLM proxy and OpenWebUI to enable structured interaction and centralized logging.</li>
-                  <li>Raised $700,000 in seed funding from Y Combinator and prominent angels including Geoff Ralston.</li>
+                  <li>Raised $700,000 in seed funding from Y Combinator and prominent angels, including Geoff Ralston.</li>
                 </ul>
               </td>
             </tr>
@@ -88,9 +79,9 @@
               </td>
               <td class="experience-details">
                 <ul>
-                  <li>Owned infrastructure for a GPU cluster for ML research (OCI, Slurm) with 256 GPUs and distributed parallel filesystem (WekaFS), supporting 125+ papers and 16000+ citations; $3.5M+ annual budget.</li>
-                  <li>Led deployment of converged 200TB WekaFS, reducing storage cost/GB by 90% and $900,000+ annual cost savings.</li>
-                  <li>Executed full cluster OS migration from Oracle Linux 7 to Ubuntu 22.04: rewrote Ansible automation, migrated LDAP/SlurmDB/Nix store, and backed up/restored nearly 200 TB and 150M+ files.</li>
+                  <li>Owned infrastructure for a GPU cluster for ML research (OCI, Slurm) with 256 GPUs and a distributed parallel filesystem (WekaFS), supporting 125+ papers and 16,000+ citations; $3.5M+ annual budget.</li>
+                  <li>Led deployment of converged 200TB WekaFS, reducing storage cost/GB by 90% for $900k+ in annual cost savings.</li>
+                  <li>Mitigated EOL risks and enabled modern containerization and WekaFS support by executing a full cluster OS migration to Ubuntu 22.04, rewriting Ansible automation and migrating 200TB and 150M+ files.</li>
                 </ul>
               </td>
             </tr>
@@ -102,8 +93,8 @@
               </td>
               <td class="experience-details">
                 <ul>
-                  <li>Built, debugged, and maintained RESTful APIs, ETL pipelines, and SQL/NoSQL data systems powering a platform processing 6B+ auction requests per day.</li>
-                  <li>Performed code reviews and ops support to improve production service reliability, correctness, and maintainability.</li>
+                  <li>Powered a platform processing 6B+ daily auction requests by building, debugging, and maintaining RESTful APIs, ETL pipelines, and SQL/NoSQL data systems.</li>
+                  <li>Audited and optimized 700+ SQL queries, removed dead queries, and cut user login latency by 50% (6s to 3s) by improving a cache-loading query.</li>
                   <li>Supported team execution as Scrum Lead by scheduling ceremonies, unblocking engineers, and tracking sprint delivery.</li>
                 </ul>
               </td>
@@ -118,7 +109,7 @@
                 <ul>
                   <li>Designed and built an advanced neural recording apparatus (tetrode drive) improving reliability and performance compared to conventional electrodes.</li>
                   <li>Tested wireless neural recording devices and recorded rodent motor cortex activity to study the relationship between neural signals and motor movement for movement-prediction modeling.</li>
-                  <li>Supported research efforts resulting in $5,500 in awarded grants.</li>
+                  <li>Secured $5,500 in research grants.</li>
                 </ul>
               </td>
             </tr>
@@ -128,10 +119,10 @@
 	            <tr>
 	              <td class="section-cell">
 	                <heading>Technical Skills</heading>
+	                <p><strong>Systems &amp; Security:</strong> Linux Kernel, eBPF (libbpf), System Instrumentation, Tamper-Resistant Telemetry, Perf Profiling</p>
+	                <p><strong>Infrastructure &amp; DevOps:</strong> Slurm, Ansible, Terraform, Docker, Kubernetes, Nix, WekaFS, Prometheus, VictoriaMetrics</p>
+	                <p><strong>Cloud &amp; Data:</strong> Oracle Cloud (OCI), AWS, GCP, PostgreSQL, MySQL, MS SQL Server, NoSQL, High-Throughput ETL</p>
 	                <p><strong>Languages:</strong> Python, TypeScript/JavaScript, Bash, C/C++, C#, Java</p>
-	                <p><strong>Systems &amp; Security:</strong> Linux kernel, eBPF (libbpf), system instrumentation, tamper-resistant telemetry, performance profiling</p>
-	                <p><strong>Infra/DevOps:</strong> Slurm, Ansible, Terraform, Docker, Kubernetes, Nix, WekaFS, Prometheus, VictoriaMetrics</p>
-	                <p><strong>Cloud &amp; Data:</strong> Oracle Cloud Infrastructure (OCI), AWS, GCP, PostgreSQL, MySQL, MS SQL Server, NoSQL databases</p>
 	              </td>
 	            </tr>
 		        </tbody></table>
@@ -140,7 +131,7 @@
 	            <tr>
 	              <td class="section-cell">
 	                <heading>Education</heading>
-	                <p><strong>University of Denver</strong><br>Bachelor of Science in Computer Engineering</p>
+	                <p><strong>University of Denver</strong><br>Denver, CO<br>Bachelor of Science in Computer Engineering</p>
 	              </td>
 	            </tr>
 		        </tbody></table>
